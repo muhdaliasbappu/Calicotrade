@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" hreflang="en" href="https://calicotrade.com/" />
+    
     <title>Calico Trade & Exports | Premium Indian Textiles & Leather</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
-    <meta name="description" content="Calico Trade & Exports: Exporting premium Indian textiles, handmade rugs, and leather goods from Kozhikode to global markets.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BR62M75B2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Initialize Tracking
+      gtag('config', 'G-9BR62M75B2');
+    </script>
+
+    <meta name="description" content="Calico Trade & Exports: Exporting premium Indian textiles, handmade rugs, and leather goods from Kozhikode to global markets.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -50,46 +59,24 @@
     </script>
 
     <style>
-        #webgl-canvas {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            z-index: 0; pointer-events: none;
-        }
+        #webgl-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
         .content-layer { position: relative; z-index: 10; }
-        .reveal-section {
-            opacity: 0; transform: translateY(40px) scale(0.95);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); filter: blur(4px);
-        }
+        .reveal-section { opacity: 0; transform: translateY(40px) scale(0.95); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); filter: blur(4px); }
         .reveal-section.is-visible { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
         .delay-100 { transition-delay: 100ms; }
         .delay-200 { transition-delay: 200ms; }
         .delay-300 { transition-delay: 300ms; }
         .stencil-text { font-variant: small-caps; letter-spacing: 2px; }
-        .scanline {
-            background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.3) 50%);
-            background-size: 100% 4px; position: fixed; inset: 0; pointer-events: none; z-index: 50; opacity: 0.2;
-        }
+        .scanline { background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.3) 50%); background-size: 100% 4px; position: fixed; inset: 0; pointer-events: none; z-index: 50; opacity: 0.2; }
         
         /* Modal Styles */
-        .modal {
-            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-        }
-        .modal-content {
-            transform: scale(0.95);
-            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .modal.active .modal-content {
-            transform: scale(1);
-        }
+        .modal { transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; }
+        .modal-content { transform: scale(0.95); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
+        .modal.active .modal-content { transform: scale(1); }
 
         /* Success Message Animation */
-        #success-message {
-            display: none;
-            animation: fadeIn 0.5s ease-out forwards;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        #success-message { display: none; animation: fadeIn 0.5s ease-out forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body class="bg-bgDark text-white font-body overflow-x-hidden selection:bg-accentGold selection:text-black">
@@ -216,7 +203,7 @@
                                     <img src="Finan.JPG" alt="Founder 2" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-all duration-700 grayscale group-hover:grayscale-0">
                                 </div>
                                 <div class="mt-3 text-center">
-                                    <p class="font-header font-bold text-white text-sm">FINAN M FIASAL</p>
+                                    <p class="font-header font-bold text-white text-sm">FINAN M FAISAL</p>
                                     <p class="font-code text-[10px] text-accentGreen">CO-FOUNDER</p>
                                 </div>
                             </div>
@@ -332,8 +319,7 @@
                                 <input type="email" required placeholder="Email" class="w-full bg-bgDark border border-borderDark p-4 rounded text-white focus:border-accentGreen outline-none font-code text-sm transition-colors">
                             </div>
                             <input type="text" required placeholder="Country / Region" class="w-full bg-bgDark border border-borderDark p-4 rounded text-white focus:border-accentGreen outline-none font-code text-sm transition-colors">
-                            
-                            <textarea required rows="4" placeholder="Tell us about your requirements (Product, Quantity, etc)..." class="w-full bg-bgDark border border-borderDark p-4 rounded text-white focus:border-accentGreen outline-none font-code text-sm transition-colors"></textarea>
+                            <textarea required rows="4" placeholder="Tell us about your requirements..." class="w-full bg-bgDark border border-borderDark p-4 rounded text-white focus:border-accentGreen outline-none font-code text-sm transition-colors"></textarea>
                             <button type="submit" class="w-full bg-white text-bgDark font-header font-bold py-4 rounded hover:bg-gray-200 transition-colors uppercase tracking-wide">Send Enquiry</button>
                         </form>
 
@@ -343,17 +329,15 @@
                             </div>
                             <h3 class="text-2xl font-header font-bold text-white mb-2">Enquiry Received!</h3>
                             <p class="text-gray-400 mb-6">Thank you for contacting us. We will review your requirements and reply via email shortly.</p>
-                            
                             <div class="bg-bgDark/50 p-6 rounded border border-borderDark">
                                 <p class="text-sm font-code text-accentGold mb-4 uppercase tracking-wider">Want to skip the wait?</p>
-                                <a href="https://meet.google.com/" target="_blank" class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-all transform hover:scale-105 shadow-lg">
+                                <a href="https://calendly.com/" target="_blank" class="inline-flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-all transform hover:scale-105 shadow-lg">
                                     <i data-lucide="video" class="w-5 h-5"></i> Schedule Google Meet
                                 </a>
                                 <p class="text-xs text-gray-500 mt-3">Book a 15-min intro call directly with the founders.</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="border-t border-borderDark pt-8 text-center text-sm text-gray-600 font-code">
                     <p>&copy; 2025 Calico Trade & Exports. All rights reserved.</p>
@@ -372,38 +356,18 @@
                     <span class="font-code text-sm tracking-widest">PRODUCT SPECS: TEXTILES</span>
                 </div>
                 <h3 class="text-3xl font-header font-bold text-white mb-6">Premium Cotton & Linens</h3>
-                
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div class="space-y-4">
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">MATERIAL</p>
-                            <p class="text-white">100% Combed Cotton, Linen Blends, Organic Options</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">ORIGIN</p>
-                            <p class="text-white">Tamil Nadu / Kerala, India</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">GSM RANGE</p>
-                            <p class="text-white">120 GSM - 400 GSM</p>
-                        </div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">MATERIAL</p><p class="text-white">100% Combed Cotton, Linen Blends</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">ORIGIN</p><p class="text-white">Tamil Nadu / Kerala, India</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">GSM RANGE</p><p class="text-white">120 GSM - 400 GSM</p></div>
                     </div>
                     <div class="space-y-4">
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">HS CODE</p>
-                            <p class="text-white font-code">5208.XX / 5209.XX</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">MOQ</p>
-                            <p class="text-white">500 Meters / Color</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">PACKING</p>
-                            <p class="text-white">Roll Packing / Bale Packing (Export Standard)</p>
-                        </div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">HS CODE</p><p class="text-white font-code">5208.XX / 5209.XX</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">MOQ</p><p class="text-white">500 Meters / Color</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">PACKING</p><p class="text-white">Roll Packing / Bale Packing</p></div>
                     </div>
                 </div>
-
                 <div class="flex gap-4">
                     <a href="#contact" onclick="closeModal('textileModal')" class="flex-1 bg-white text-bgDark font-bold py-3 text-center rounded hover:bg-gray-200 transition-colors">Request Quote</a>
                     <button class="flex-1 border border-borderDark text-white py-3 rounded hover:border-accentGold transition-colors">Download Swatch Card</button>
@@ -411,7 +375,7 @@
             </div>
         </div>
     </div>
-
+    
     <div id="rugModal" class="modal fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 invisible" onclick="if(event.target === this) closeModal('rugModal')">
         <div class="modal-content bg-cardDark border border-borderDark w-full max-w-2xl rounded-lg overflow-hidden shadow-2xl relative">
             <button onclick="closeModal('rugModal')" class="absolute top-4 right-4 text-gray-400 hover:text-white"><i data-lucide="x" class="w-6 h-6"></i></button>
@@ -421,38 +385,18 @@
                     <span class="font-code text-sm tracking-widest">PRODUCT SPECS: RUGS</span>
                 </div>
                 <h3 class="text-3xl font-header font-bold text-white mb-6">Hand-Knotted Carpets</h3>
-                
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div class="space-y-4">
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">TECHNIQUE</p>
-                            <p class="text-white">Hand-Tufted, Hand-Knotted, Flat Weave</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">MATERIAL</p>
-                            <p class="text-white">New Zealand Wool, Viscose, Bamboo Silk</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">CUSTOMIZATION</p>
-                            <p class="text-white">Size, Color, Pattern (CAD Available)</p>
-                        </div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">TECHNIQUE</p><p class="text-white">Hand-Tufted, Hand-Knotted</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">MATERIAL</p><p class="text-white">New Zealand Wool, Viscose</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">CUSTOMIZATION</p><p class="text-white">Size, Color, Pattern</p></div>
                     </div>
                     <div class="space-y-4">
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">HS CODE</p>
-                            <p class="text-white font-code">5702.XX</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">MOQ</p>
-                            <p class="text-white">50 Pieces (Small) / 10 Pieces (Large)</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">LEAD TIME</p>
-                            <p class="text-white">45-60 Days (Depending on Complexity)</p>
-                        </div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">HS CODE</p><p class="text-white font-code">5702.XX</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">MOQ</p><p class="text-white">50 Pieces (Small)</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">LEAD TIME</p><p class="text-white">45-60 Days</p></div>
                     </div>
                 </div>
-
                 <div class="flex gap-4">
                     <a href="#contact" onclick="closeModal('rugModal')" class="flex-1 bg-white text-bgDark font-bold py-3 text-center rounded hover:bg-gray-200 transition-colors">Request Quote</a>
                     <button class="flex-1 border border-borderDark text-white py-3 rounded hover:border-accentGold transition-colors">View Catalog PDF</button>
@@ -470,38 +414,18 @@
                     <span class="font-code text-sm tracking-widest">PRODUCT SPECS: LEATHER</span>
                 </div>
                 <h3 class="text-3xl font-header font-bold text-white mb-6">Goods & Handicrafts</h3>
-                
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div class="space-y-4">
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">TYPE</p>
-                            <p class="text-white">Full Grain, Top Grain, Vegetable Tanned</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">PRODUCTS</p>
-                            <p class="text-white">Bags, Wallets, Belts, Corporate Gifts</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">CERTIFICATION</p>
-                            <p class="text-white">REACH Compliant / LWG Rated</p>
-                        </div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">TYPE</p><p class="text-white">Full Grain, Top Grain</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">PRODUCTS</p><p class="text-white">Bags, Wallets, Belts</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">CERTIFICATION</p><p class="text-white">REACH Compliant</p></div>
                     </div>
                     <div class="space-y-4">
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">HS CODE</p>
-                            <p class="text-white font-code">4202.XX</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">MOQ</p>
-                            <p class="text-white">100 Pieces / Design</p>
-                        </div>
-                        <div class="border-l-2 border-accentGold pl-4">
-                            <p class="text-xs font-code text-gray-500">SAMPLING</p>
-                            <p class="text-white">7-10 Days (Paid Sampling Available)</p>
-                        </div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">HS CODE</p><p class="text-white font-code">4202.XX</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">MOQ</p><p class="text-white">100 Pieces / Design</p></div>
+                        <div class="border-l-2 border-accentGold pl-4"><p class="text-xs font-code text-gray-500">SAMPLING</p><p class="text-white">7-10 Days</p></div>
                     </div>
                 </div>
-
                 <div class="flex gap-4">
                     <a href="#contact" onclick="closeModal('leatherModal')" class="flex-1 bg-white text-bgDark font-bold py-3 text-center rounded hover:bg-gray-200 transition-colors">Request Quote</a>
                     <button class="flex-1 border border-borderDark text-white py-3 rounded hover:border-accentGold transition-colors">Download Lookbook</button>
@@ -510,25 +434,25 @@
         </div>
     </div>
 
-
     <script>
-        // --- 1. NEW FORM SUBMIT LOGIC ---
+        // --- 1. FORM SUBMIT LOGIC ---
         function handleFormSubmit(event) {
-            event.preventDefault(); // Stop actual page reload
+            event.preventDefault(); 
+            // Hide form, show success
+            document.getElementById('enquiryForm').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
             
-            // 1. Hide the Form
-            const form = document.getElementById('enquiryForm');
-            form.style.display = 'none';
-            
-            // 2. Show the Success Message with Google Meet
-            const successMsg = document.getElementById('success-message');
-            successMsg.style.display = 'block'; // Make visible
-            
-            // Optional: You would normally send the data to a backend here.
-            // console.log("Form data collected...");
+            // ANALYTICS TRACKING EVENT (When enabled)
+            if(typeof gtag === 'function') {
+                gtag('event', 'generate_lead', {
+                    'currency': 'USD',
+                    'value': 0
+                });
+            }
         }
 
-        // --- 2. MODAL LOGIC (UNCHANGED) ---
+
+        // --- 2. MODAL LOGIC ---
         function openModal(id) {
             const modal = document.getElementById(id);
             modal.classList.remove('invisible', 'opacity-0');
@@ -543,7 +467,8 @@
             document.body.style.overflow = 'auto';
         }
 
-        // --- 3. THREE.JS SCENE (UNCHANGED) ---
+
+        // --- 3. THREE.JS SCENE ---
         const canvas = document.querySelector('#webgl-canvas');
         const scene = new THREE.Scene();
         scene.fog = new THREE.FogExp2(0x05070A, 0.0025);
